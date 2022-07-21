@@ -1,38 +1,89 @@
-.App {
+:root {
+  --bg-clr: #fff;
+  --main-heading: #1E1D85;
+  --profile-text-color: #1E1D85;
+  --profile-bg-color: #fff;
+  --footer-bg-clr: #252525;
+  --footer-font-clr: #ababab;
+  --para-clr: #333;
+  --label-clr: #fff;
+  --btn-bg-color: #fff;
+  --btn-text-color: #1E1D85;
+  --card-bg-color: #1E1D85;
+  --toggle-color: #000;
+  --primary-white: #fff;
+}
+
+.form_card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  width: 70%;
+  margin: 0rem auto;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+}
+
+.form_input {
+  padding: 10px;
+}
+
+.form_input label {
+  color: var(--label-clr);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.form_input input {
+  padding: 0.3rem;
+  border-radius: 8px;
+  width: 90%;
+}
+
+.form_input button {
+  margin-top: 1.5rem;
+  width: 75%;
+}
+
+.login_card {
+  margin: 8rem auto 1.5rem auto;
+}
+
+.login_card h2 {
+  font-size: 1.8rem;
+  color: var(--primary-white);
+  letter-spacing: 0.1rem;
+}
+
+.login_btn {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form_btn {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.6rem 0rem;
+  border-radius: 0.2rem;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  letter-spacing: 0.05rem;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form_btn:hover {
+  opacity: 0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.application_txt {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
 }

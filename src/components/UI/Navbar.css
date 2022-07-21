@@ -1,0 +1,23 @@
+.general_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-heading);
+    padding: 0.9rem 1.5rem;
+    cursor: pointer;
+}
+
+.general_navbar img {
+    width: 100px;
+    height: 25px;
+}
+
+
+/* Responsive CSS */
+
+@media only screen and (min-width: 576px) {
+    .general_navbar img {
+        width: 156px;
+        height: 40px;
+    }
+}
