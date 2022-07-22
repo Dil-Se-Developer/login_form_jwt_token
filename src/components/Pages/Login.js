@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-// import PropTypes from "prop-types";
+import React, { useState } from "react";
 import FormInput from "../UI/FormInput";
 import "./Login.css";
 
@@ -20,7 +18,6 @@ const Login = ({ setToken }) => {
     password: "",
   };
 
-  const Navigate = useNavigate();
   const [formValues, setFormValues] = useState(intialValues);
 
   const loginHandler = async (event) => {
@@ -70,9 +67,5 @@ const Login = ({ setToken }) => {
     </>
   );
 };
-
-// Login.propTypes = {
-//   setToken: PropTypes.func.isRequired,
-// };
 
 export default Login;
