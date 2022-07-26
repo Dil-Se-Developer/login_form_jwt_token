@@ -6,7 +6,8 @@ const Navbar = ({ loginStatus, clearToken }) => {
   // const { clearToken } = useToken();
 
   const logoutHandler = () => {
-    localStorage.clear();
+    // localStorage.clear();
+    document.cookie='token=';
     clearToken();
   };
 
